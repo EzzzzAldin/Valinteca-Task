@@ -1,0 +1,239 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("./images/1ea4fa941cbe4148b4f953d4f5b1c969.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.welcome,
+.sign-up,
+.succeed {
+  padding: 100px 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  column-gap: 30px;
+  background-color: #f5f7ffd9;
+  margin-top: 20px;
+}
+
+.welcome .image,
+.succeed .image {
+  display: flex;
+  justify-content: center;
+}
+
+.welcome .image img,
+.succeed .image img {
+  max-width: 450px;
+  height: 315px;
+}
+
+.welcome .info,
+.succeed .succeed-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info h2,
+.sign-up h3,
+.succeed-message h3 {
+  font-size: 56px;
+  color: #2d2d2d;
+}
+
+.info p,
+.sign-up p,
+.succeed-message p {
+  font-size: 24px;
+  font-weight: lighter;
+  color: #1f1249;
+  margin: 20px 0;
+}
+
+.btn-start {
+  background: linear-gradient(113.87deg, #2663df 14.81%, #758ff0 88.76%);
+  border: 0;
+  padding: 12px;
+  border-radius: 7px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .info,
+  .succeed-message,
+  .register {
+    align-items: center;
+  }
+
+  form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .info,
+  .succeed-message,
+  .register {
+    align-items: center;
+  }
+
+  form {
+    width: 100%;
+  }
+}
+
+.sign-up p {
+  margin: 0;
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.register input {
+  border: 1px solid #ccc;
+  padding: 10px 45px;
+  border-radius: 5px;
+  outline: none;
+  font-family: "Cairo", sans-serif;
+  color: #3b3b3b;
+  font-size: 16px;
+  width: 100%;
+}
+
+.username,
+.email,
+.password,
+.re-password {
+  position: relative;
+}
+
+.username i,
+.email i,
+.password i,
+.re-password i {
+  position: absolute;
+  left: 2%;
+  top: 27%;
+  font-size: 25px;
+  color: #3b3b3b;
+}
+
+@media (max-width: 768px) {
+  .sign-up .image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sign-up .image img {
+    max-width: 70%;
+  }
+
+  .sign-up h3 {
+    font-size: 35px;
+  }
+
+  .sign-up p {
+    font-size: 20px;
+  }
+
+  .username,
+  .email,
+  .password,
+  .re-password {
+    margin: 5px;
+    width: 70%;
+  }
+
+  .register .btn-start {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .sign-up .image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sign-up .image img {
+    max-width: 70%;
+  }
+
+  .sign-up h3 {
+    font-size: 35px;
+  }
+
+  .sign-up p {
+    font-size: 20px;
+  }
+
+  .username,
+  .email,
+  .password,
+  .re-password {
+    margin: 5px;
+    width: 70%;
+  }
+
+  .register .btn-start {
+    width: 70%;
+  }
+}
+
+.sign-up p {
+  margin: 0;
+}
+
+.succeed-message h3 {
+  font-size: 45px;
+}
+
+.succeed-message a {
+  color: #1f1249;
+}
